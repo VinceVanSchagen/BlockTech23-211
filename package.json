@@ -1,0 +1,23 @@
+{
+  "name": "blocktech23-211",
+  "version": "1.0.0",
+  "description": "biepediebapie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinceVanSchagen/BlockTech23-211.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinceVanSchagen/BlockTech23-211/issues"
+  },
+  "homepage": "https://github.com/VinceVanSchagen/BlockTech23-211#readme",
+  "dependencies": {
+    "ejs": "^3.1.8"
+  }
+}

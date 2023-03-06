@@ -1,19 +1,11 @@
-* p{
-    color: blue;
+.profiel {
+    background-color: #dee2ff;
+  }
+
+.profiel img{
+    width: 50%;
 }
-* H1{
-    color: rgb(0, 255, 132);
-}
-* {
-    background: rgb(0, 0, 0);
-}
-* img{
-    width: 500px;
-}
-* body{
-    display: flex;
-    justify-content: center;
-}
-* button{
-    color: aqua;
+
+.profiel input{
+    width: 10em;
 }

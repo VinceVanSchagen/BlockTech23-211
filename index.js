@@ -22,7 +22,9 @@ app.set("views", "view")
 
 
 app.use(function(req, res, next) {
-  res.status(404).send ("<h1>Error 404</h1> <p>self destruct mode in 10 seconds</p> ");
+  res.status(404).render ("./partials/header.ejs", {
+hallo:"hallo"
+  });
 });
 
 

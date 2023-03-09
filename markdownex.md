@@ -10,3 +10,8 @@ github wiki kopieren.
 header/footer volledig maken.
 als ik header bij header.ejs intype werkt mijn css niet
 
+404 zit alleen in andere branche
+
+const cursor = coll.find({ hasRings: false, mainAtomsphere: "Ar" });
+pakt ie niet, maar die daarvoor wel
+

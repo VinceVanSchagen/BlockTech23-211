@@ -2,26 +2,17 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    background-color: #7f8eff;
+    background-color: rgba(0, 0, 255, 0.3);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 1em;
-    padding-right: 1em;
+    color: white;
     margin-bottom: 1em;
-
-}
-header button{
-    width: 3em; 
-    height: 3em; 
 }
 footer{
-    background-color: #aab4ff;
-}
-.profiel {
-    background-color: #dee2ff;
-}
+    padding-top: 1em;
+    color: white;
 
+}
 .profiel div:nth-of-type(2) img{
     width: 30%;
     border-radius: 50%;
@@ -29,33 +20,50 @@ footer{
     justify-self: center;
 
 }
-.profiel div:nth-of-type(1) button{
-    width: 5em;
-    height: 2em;
-}
-.profiel div:nth-of-type(2) button{
-    width: 7em;
-
-    
-}
-
-.profiel form{
-    margin-top: 1em;
-    margin-bottom: 1em;
-
-}
 .profiel video{
-    width: 20em;
+    width: 12em;
 }
 .profiel img{
     width: 100%;
 }
+
+/* bovenste regel */
 .profiel div:first-of-type{
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #4c32f5;
+    margin-bottom: 2em;
 }
+.profiel div:first-of-type h3{
+    font-size: 1.2em;
+    color: white;
+}
+
+.profiel p:first-of-type{
+    font-size: 0.6em;
+    display: flex;
+    justify-content: center;}
+/* profielfoto en omgevings video */
 .profiel div:nth-of-type(2){
-    display: flexbox;
+    display: flex;
+    justify-content: space-around;
 }
-
-
+/* gegevens */
+.profiel div:nth-of-type(3){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+}
+.profiel div:nth-of-type(3) form{
+    width: 10em;
+    margin-top: 2em;
+}
+.profiel div:nth-of-type(3) form:last-of-type{
+    width: 100%;
+    font-size: 0.8em;
+}
+.profiel div:nth-of-type(3) p:last-of-type{
+    margin-bottom: 3em;
+}

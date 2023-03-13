@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('./partials/head.ejs') %> 
-
 <body  class="profiel" >
 <header>
     <%- include('./partials/header.ejs') %> 
 </header>
 <main>
+    <!-- bovenste regel -->
     <div>
         <button>terug</button>
         <h3>Goeiemorgen <%= data.userQuery %>!</h3>
         <button>opslaan</button>
     </div>
     <p>Zorg ervoor dat je profiel een duidelijke representatie geeft van wie jij bent.</p>
-
+    <!-- profiel foto en video omgeving -->
     <div>
         <img src="images/avatar-117349636cef3cf7cc82133fc871763a.jpg" alt="profielfoto">
-        <button>Wijzigen</button>
-    </div>
-
-    <video controls></video>
+        <video controls></video>
+    </div> 
+    <!-- gegevens -->
     <div>
         <form>
         <label for="Name"></label>
@@ -41,6 +40,7 @@
         <textarea id="freeform" name="freeform" rows="10" cols="40">
         </textarea>
         </form>
+        <p>0/150</p>
     </div>
 
       <img src="images/maps-placeholder.jpeg" alt="profielfoto">

@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/VinceVanSchagen/BlockTech23-211#readme",
   "dependencies": {
-    "ejs": "^3.1.8"
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "env": "^0.0.2",
+    "mongodb": "^5.1.0"
   }
 }

@@ -4,14 +4,3 @@ https://www.youtube.com/watch?v=OKGMhFgR7RY
 voor partials
 https://www.youtube.com/watch?v=yXEesONd_54
 
-vragen:
-github wiki kopieren.
-404 pagina inserten.
-header/footer volledig maken.
-als ik header bij header.ejs intype werkt mijn css niet
-
-404 zit alleen in andere branche
-
-const cursor = coll.find({ hasRings: false, mainAtomsphere: "Ar" });
-pakt ie niet, maar die daarvoor wel
-

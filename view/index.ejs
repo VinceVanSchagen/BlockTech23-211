@@ -2,51 +2,48 @@
 <html lang="en">
     <%- include('./partials/head.ejs') %> 
 <body  class="profiel" >
-<header>
+    <header>
     <%- include('./partials/header.ejs') %> 
-</header>
-<main>
-    <!-- bovenste regel -->
-    <div>
-        <button>terug</button>
-        <h3>Goeiemorgen <%= data.userQuery %>!</h3>
-        <button>opslaan</button>
-    </div>
-    <h1>Profiel bewerken</h1>
-    <!-- profiel foto en video omgeving -->
-    <div>
-        <img src="images/avatar-117349636cef3cf7cc82133fc871763a.jpg" alt="profielfoto">
-    </div> 
-    <!-- gegevens -->
-    <div>
-        <form>
-        <label for="Name"></label>
-        <input type="text" id="Name" name="Name" placeholder="Naam">
-        </form>
+    </header>
+    <main>
+        <!-- bovenste regel -->
+        <div>
+            <button>terug</button>
+            <h3>Goeiemorgen <%= data.userQuery %>!</h3>
+            <button>opslaan</button>
+        </div>
+        <h1>Profiel bewerken</h1>
+        <!-- profiel foto en video omgeving -->
+        <div>
+            <img src="images/avatar-117349636cef3cf7cc82133fc871763a.jpg" alt="profielfoto">
+        </div> 
+        <!-- gegevens -->
+        <div>
+            <form>
+            <label for="Name"></label>
+            <input type="text" id="Name" name="Name" placeholder="Naam">
+            </form>
 
-        <form action="">
-        <label for="Name"></label>
-        <input type="text" id="Name" name="Name" placeholder="Achternaam">
-        </form>
+            <form action="">
+            <label for="Name"></label>
+            <input type="text" id="Name" name="Name" placeholder="Achternaam">
+            </form>
 
-        <form action="">
-        <label for="Leeftijd"></label>
-        <input type="month" id="start" name="start"min="1900-03" value="">
-        </form>
-    
-        <form action="">
-        <label for="freeform">Vertel kort over jezelf, wat houd je bezig in het dagelijkse leven.</label>
-        <textarea id="freeform" name="freeform" rows="10" cols="40">
-        </textarea>
-        </form>
-        <p>0/150</p>
-    </div>
-    <video controls></video>
-
-    <img src="images/maps-placeholder.jpeg" alt="profielfoto">
-      
-<footer>
-    <%- include('./partials/footer.ejs') %> 
-</footer>
+            <form action="">
+            <label for="Leeftijd"></label>
+            <input type="month" id="start" name="start"min="1900-03" value="">
+            </form>
+        
+            <form action="">
+            <label for="freeform">Vertel kort over jezelf, wat houd je bezig in het dagelijkse leven.</label>
+            <textarea id="freeform" name="freeform" rows="10" cols="40">
+            </textarea>
+            </form>
+            <p>0/150</p>
+        </div>
+        <video controls></video>      
+    <footer>
+        <%- include('./partials/footer.ejs') %> 
+    </footer>
 </body>
 </html>

@@ -1,32 +1,43 @@
-// require('dotenv').config()
+require('dotenv').config()
+const uri = process.env.MONGODB_URI
+
 const port = 4000
 
 const express = require('express')
 const ejs = require('ejs')
 const path = require('path')
-// const uri = process.env.MONGODB_URI;
-// const uri = 'mongodb+srv://' + process.env.DB_USERNAME + ':' + process.env.DB_PASS + process.env.DB_NAME + '/' + process.env.DB_HOST + '?retryWrites=true&w=majority';
-
-const { MongoClient } = require("mongodb");
-// Replace the uri string with your MongoDB deployment's connection string.
-const uri = "mongodb+srv://vincevanschagen:VInciusMONGODB70@cluster0.byrbpri.mongodb.net/?retryWrites=true&w=majority"
-
-const client = new MongoClient(uri);
-
-
-
 const app = express()
+const { MongoClient } = require("mongodb");
 
+
+app.use(express.static('static'))
+app.set("view engine", "ejs")
+app.set("views", "view")
+
+// MongoDB
+ 
+
+console.log('uri', uri)
+const client = new MongoClient(uri);
 async function run() {
   try {
     await client.connect();
     // database and collection code goes here
-    const db = client.db("sample_guides");
-    const coll = db.collection("planets");
-    // find code goes here
-    const cursor = coll.find();
-    // iterate code goes here
-    await cursor.forEach(console.log);
+    const db = client.db("Profiel");
+    const coll = db.collection("users");
+
+    // insert code goes here
+    const docs = [
+      {userName: "Vincius70", firstName: "Vince", lastName:"van Schagen", age: 21, gender: "male"},
+      {userName: "bertinNN", firstName: "Bert", lastName:"Lammes", age: 17, gender: "male"},
+      {userName: "Emma_2000", firstName: "Emma", lastName:"Heeksen", age: 22, gender: "female"},
+    ];
+
+    const result = await coll.insertMany(docs);
+
+    // display the results of your operation
+    console.log(result.insertedIds);
+
   } finally {
     // Ensures that the client will close when you finish/error
     await client.close();
@@ -34,28 +45,14 @@ async function run() {
 }
 run().catch(console.dir);
 
+// Einde MongoDB
 
-app.use(express.static('static'))
-app.set("view engine", "ejs")
-app.set("views", "view")
-
-  app.get('/:userQuery',(req, res)=>{
-    res.render('index',{data : {userQuery: req.params.userQuery,}});
-  });
+// routes
+app.get('/:userQuery',(req, res)=>{
  
+})
 
 
-  
 
 
-app.use(function(req, res, next) {
-  res.status(404).render ("./partials/header.ejs", {
-hallo:"hallo"
-  });
-});
-
-
-app.listen(port, () => {
-    console.log(`Mic check on port ` + port)
-  })
 

@@ -13,7 +13,7 @@ header {
 }
 footer {
   padding-top: 1em;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .profiel div:nth-of-type(2) img {
   width: 30%;
@@ -22,7 +22,7 @@ footer {
   justify-self: center;
 }
 .profiel video {
-  width: 12em;
+  width: 20em;
 }
 .profiel img {
   width: 100%;
